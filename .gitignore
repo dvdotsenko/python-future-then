@@ -1,0 +1,13 @@
+*.py[cod]
+*.so
+
+# virtual env folder
+.venv/
+
+# IDE artifacts
+.idea/
+*.iml
+.settings
+
+# Misc
+.DS_Store
