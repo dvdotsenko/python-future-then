@@ -9,3 +9,21 @@ formal, standard implementation is lacking any formal or convenient API for the 
 [JavaScript Promises](https://github.com/promises-aplus/promises-spec) have then-ability as part of the spec.
 This extension of Python Future object borrows `.then()` behavior from [JavaScript Promises](https://github.com/promises-aplus/promises-spec).
 
+## INSTALL
+
+`pip install futures_then`
+
+## USE
+
+```python
+In [1]: from futures_then import ThenableFuture as Future
+
+In [2]: f1 = Future()
+
+In [3]: f2 = f1.then(lambda v: v + ' transformed')
+
+In [4]: f1.set_result('future')
+
+In [5]: f2.result()
+Out[5]: 'future transformed'
+```
