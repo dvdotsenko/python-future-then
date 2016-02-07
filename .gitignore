@@ -11,3 +11,8 @@
 
 # Misc
 .DS_Store
+
+# Build
+build/
+dist/
+*.egg-info/
